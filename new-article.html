@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Create a New Article</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&display=swap"
+    />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="default-nav-bar-spacing">
+        <nav>
+          <ul>
+            <li class="inspire-logo media-container">Inspire</li>
+          </ul>
+          <ul>
+            <li>
+              <a class="media-container" href="./index.html"> Home</a>
+            </li>
+            <li>
+              <a id="active-link" href="./new-article.html"
+                ><img
+                  src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-edit-5.png&r=55&g=58&b=60"
+                  alt="New article icon"
+                  class="navbar-icon"
+                />New Article</a
+              >
+            </li>
+            <li>
+              <a href="./settings.html">
+                <img
+                  src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-gear-1.png&r=153&g=153&b=153"
+                  alt="Settings icon"
+                  class="navbar-icon"
+                />Settings</a
+              >
+            </li>
+            <li><a href="">John Doe</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form id="inputform">
+        <div class="new-article-grid-structure-centering">
+          <div class="new-grid-structure">
+            <div class="new-article-heading centering">
+              <h3>Create a New Article</h3>
+            </div>
+            <div class="centering" id="new-title-div">
+              <input
+                class="indiv-styles"
+                type="text"
+                id="article-title"
+                placeholder="Article Title"
+              />
+            </div>
+            <div class="centering" id="new-about-div">
+              <input
+                class="indiv-styles"
+                type="text"
+                id="article-about"
+                placeholder="What's this article about?"
+              />
+            </div>
+            <div class="centering" id="new-article-div">
+              <textarea
+                class="indiv-styles"
+                id="new-article-article"
+                placeholder="Write your article (in markdown)"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="centering" id="new-tags-div">
+              <input
+                class="indiv-styles"
+                type="text"
+                id="new-article-tags"
+                placeholder="Enter Tags"
+              />
+            </div>
+            <div class="centering" id="new-publish-div">
+              <input
+                class="indiv-styles"
+                type="submit"
+                id="article-post-button"
+                value="Publish Article"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <ul class="inspire-logo-footer-flex">
+        <li class="inspire-logo-footer">Inspire</li>
+      </ul>
+    </footer>
+  </body>
+</html>
